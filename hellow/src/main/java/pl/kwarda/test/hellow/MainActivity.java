@@ -17,12 +17,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ((TextView)findViewById(R.id.details)).setText(new Date().toString());
-        findViewById(R.id.main).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goNext(v);
-            }
-        });
+
     }
 
     public void goNext(View view) {
