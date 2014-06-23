@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ((TextView)findViewById(R.id.details)).setText(new Date().toString());
+        ((TextView)findViewById(R.id.details)).setText(new Date(System.currentTimeMillis()).toString());
 
     }
 
